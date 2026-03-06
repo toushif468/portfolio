@@ -1,4 +1,6 @@
 // import React from 'react'
+import { LuDownload } from 'react-icons/lu';
+import LinkButton from '../LinkButton';
 import { navLinks } from './Navbar';
 import Link from 'next/link'
 
@@ -26,6 +28,14 @@ export default function MobileNav({ navOpen }: MobileNavProps) {
                         )
                     })
                 }
+
+                <LinkButton
+                    href='/documents/My CV.pdf'
+                    text='Download CV'
+                    download
+                    icon={LuDownload}
+                    iconPosition='left'
+                />
 
             </ul>
         </>
