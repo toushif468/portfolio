@@ -13,10 +13,10 @@ export default function MobileNav({ navOpen }: MobileNavProps) {
     return (
         <>
             {/* Your mobile menu code here */}
-            <div className={`fixed inset-0 transform right-0 z-50 bg-black opacity-30 w-full h-screen transition-all duration-500 ${showMobileNav}`}>
+            <div className={`fixed inset-0 transform right-0 z-50 bg-black opacity-30 w-full h-screen transition-all duration-500 ${showMobileNav} lg:hidden`}>
                 {/* Menu Content */}
             </div>
-            <ul className={`fixed flex items-center justify-center text-white flex-col h-full transform transition-all duration-500 delay-300 w-[80%] sm:w-[60%] bg-slate-800 space-y-1 z-80 right-0 top-0 ${showMobileNav}`}>
+            <ul className={`fixed flex items-center justify-center text-white flex-col h-full transform transition-all duration-500 delay-300 w-[80%] sm:w-[60%] bg-slate-800 space-y-1 z-80 right-0 top-0 ${showMobileNav} lg:hidden`}>
                 {
                     navLinks.map((link) => {
                         return (
@@ -28,14 +28,16 @@ export default function MobileNav({ navOpen }: MobileNavProps) {
                         )
                     })
                 }
+                <div className='my-4'>
+                    <LinkButton
+                        href='/documents/My CV.pdf'
+                        text='Download CV'
+                        download
+                        icon={LuDownload}
+                        iconPosition='left'
+                    />
+                </div>
 
-                <LinkButton
-                    href='/documents/My CV.pdf'
-                    text='Download CV'
-                    download
-                    icon={LuDownload}
-                    iconPosition='left'
-                />
 
             </ul>
         </>
