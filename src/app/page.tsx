@@ -19,6 +19,7 @@ export default function Home() {
       <SkillSection />
       <TestimonialSection />
       <ContactSection />
+      
     </>
   );
 }
