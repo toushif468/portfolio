@@ -40,7 +40,7 @@ const Navbar = () => {
     <nav className={`h-18 fixed z-50 w-full transiton-all duration-300 ${navBackground ? "bg-slate-950/50 border-white/10 shadow-md backdrop-blur-md border-b " : ""}`}>
 <div className='flex items-center h-full justify-between w-[90%] mx-auto'>
   <Logo />
-  <ul className='hidden lg:flex space-x-10 h-full'>
+  <ul className='hidden lg:flex space-x-10'>
     {navLinks.map((link) => (
       <li key={link.url}>
         <Link href={link.url} className="text-gray-200 hover:text-cyan-300 font-medium transition-colors duration-300">
