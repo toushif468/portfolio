@@ -1,5 +1,5 @@
 import Header from "../general/Header";
-import { FaQuoteLeft, FaStar } from "react-icons/fa"; // Optional: adding a nice quote icon
+import { FaQuoteLeft, FaStar } from "react-icons/fa"; 
 
 const testimonials = [
     {
@@ -41,7 +41,7 @@ const testimonials = [
 
 export default function TestimonialSection() {
     return (
-        <section id="testimonial" className="py-24 px-4 bg-slate-950">
+        <section id="testimonials" className="py-24 px-4 bg-slate-950">
             <div className="max-w-7xl mx-auto flex flex-col items-center">
                 <Header title="Testimonials" />
 

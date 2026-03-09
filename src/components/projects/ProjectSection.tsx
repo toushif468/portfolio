@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function ProjectSection() {
     return (
-        <section id="project" className="py-20">
+        <section id="projects" className="py-20">
             <Header title="Recent Projects" />
 
 
