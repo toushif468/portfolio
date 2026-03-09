@@ -48,6 +48,8 @@ export default function TestimonialSection() {
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
                     {testimonials.map((testimonial, index) => (
                         <div 
+                        data-aos="fade-right"
+                        data-aos-delay={index*100}
                             key={index} 
                             className="bg-slate-900/40 p-8 rounded-3xl border border-white/5 hover:border-indigo-500/40 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-2"
                         >

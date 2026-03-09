@@ -10,7 +10,7 @@ export default function ResumeSection() {
     <section id="resume" className="my-12">
       <div className="w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-10">
         {/* education */}
-        <div>
+        <div data-aos="zoom-out">
           <Header title="My Education" as="h2" />
           <div className="space-y-6">
             <ResumeCard icon={LuGraduationCap} role={"Computer Science"} description={"Bachelor of Coputer Science and Engineering from United INternation University | Focused on algorithms, data structures, softwate engineering principles, and web technologies."} date="Novenmber 2025" />
@@ -19,7 +19,7 @@ export default function ResumeSection() {
           </div>
         </div>
         {/* experience */}
-        <div>
+        <div data-aos="zoom-in" data-aos-delay="200">
           <Header title="My Experience" as="h2" />
           <div className="space-y-8">
             {/* 1. CURRENT PROJECT: E-COMMERCE */}

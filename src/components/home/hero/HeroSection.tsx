@@ -22,21 +22,20 @@ export default function HeroSection() {
                 />
             </div>
             <div className='absolute z-10 flex flex-col items-center'>
-                <div className="w-37.5 h-37.5 relative">
+                <div className="w-37.5 h-37.5 relative" data-aos="fade-up">
                     <div className="absolute inset-0 rounded-full  bg-linear-to-r from-blue-500 to-purple-600 blur-lg anmate-pulse opacity-50"></div>
                     <Image src="/Image/image.jpg" alt="image"
                         className="rounded-full object-cover" fill />
 
                 </div>
-                <h1 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl my-6 font-bold tracking-wide text-transparent bg-clip-text bg-linear-to-r from-indigo-500 to-gray-300">Hi, I&apos;m a Web Developer</h1>
+                <h1 data-aos="fade-up" data-aos-delay="200" className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl my-6 font-bold tracking-wide text-transparent bg-clip-text bg-linear-to-r from-indigo-500 to-gray-300" >Hi, I&apos;m a Web Developer</h1>
                 <AnimatedIntro />
                 <LinkButton
                     href="#projects"
                     text="see my work"
                     icon={LuArrowRight}
                     rounded
-                    download={false}
-                />
+                    download={false} aosType="fade-up" aosDelay={600}     animate           />
             </div>
 
         </section>

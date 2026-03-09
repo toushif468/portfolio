@@ -1,8 +1,7 @@
-import { DiJavascript, DiReact, DiNodejs, DiPython, DiCss3, DiJava } from "react-icons/di";
+import { DiJavascript, DiReact, DiNodejs, DiPython, DiJava } from "react-icons/di";
 import { SiTypescript, SiNextdotjs, SiTailwindcss, SiCplusplus, SiExpress, SiMongodb, SiPhp } from "react-icons/si";
 import Header from "../general/Header";
 import SkillCard from "./SkillCard";
-
 
 const skills = [
     { name: "Javascript", icon: <DiJavascript />, skillLevel: 85 },
@@ -26,12 +25,19 @@ export default function SkillSection() {
             <div className="max-w-6xl mx-auto px-4">
                 <div className="flex flex-wrap justify-center gap-6 sm:gap-8 mt-12">
                     {skills.map((skill, index) => (
-                        <SkillCard 
-                            key={index}
-                            name={skill.name}
-                            icon={skill.icon}
-                            skillLevel={skill.skillLevel}
-                        />
+                        /* Wrap in a div to ensure AOS triggers correctly */
+                        <div 
+                            key={index} 
+                            data-aos="flip-right" 
+                            /* Dynamic delay: 0ms, 100ms, 200ms, etc. */
+                            data-aos-delay={index * 80} 
+                        >
+                            <SkillCard 
+                                name={skill.name}
+                                icon={skill.icon}
+                                skillLevel={skill.skillLevel}
+                            />
+                        </div>
                     ))}
                 </div>
             </div>
