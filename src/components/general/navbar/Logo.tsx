@@ -8,7 +8,7 @@ const Logo = () => {
             <div className='w-10 h-10 bg-gray-200 rounded-full grid place-items-center'>
                 <LuCodeXml />
             </div>
-            <p className="text-gray-200 font-bold md:text-2xl hidden sm:block">Webdev</p>
+            <p className="text-gray-200 font-bold md:text-2xl hidden sm:block">Toushif</p>
         </Link>
     )
 }

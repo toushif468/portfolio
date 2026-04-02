@@ -11,31 +11,32 @@ export default function ProjectSection() {
 
                 <div data-aos="fade-right">
                     <ProjectCard
-                        title="Modern Dashboard UI"
-                        image="/Image/p1.webp"
+                        title="Fashion E-commerce"
+                        image="/Image/fashionEcomerce.png"
                         description="A responsive admin dashboard with data visualization charts, user management, and real-time analytics. Built with React, Tailwind CSS and Recharts."
+                    />
+                </div>
+
+                <div className="fade-left">
+                    <ProjectCard
+                        title="SymToDoc"
+                        image="/Image/SymToDoc.png"
+                        description="SymToDoc is a React Native mobile application designed to empower users with fast, accessible, and intelligent health insights. Visit github to know more."
                     />
                 </div>
 
                 <div data-aos="fade-left">
                     <ProjectCard
-                        title="E-commerce Marketplace"
-                        image="/Image/p2.webp"
-                        description="A full-stack marketplace featuring secure Stripe payments, real-time inventory, and a custom dashboard for vendors."
+                        title="Root2Good"
+                        image="/Image/Roots2Goods.png"
+                        description="An agro-product supply chain management system that help users to manage their business and monitored by admin. Visit github to know more."
                     />
                 </div>
                 <div className="fade-right">
                     <ProjectCard
                         title="Modern education website"
-                        image="/Image/p3.webp"
-                        description="A full-stack marketplace featuring secure Stripe payments, real-time inventory, and a custom dashboard for vendors."
-                    />
-                </div>
-                <div className="fade-left">
-                    <ProjectCard
-                        title="Modern SAAS project"
-                        image="/Image/p4.webp"
-                        description="A full-stack marketplace featuring secure Stripe payments, real-time inventory, and a custom dashboard for vendors."
+                        image="/Image/UIU_PSP.png"
+                        description="UIU_PSP is a collaborative educational web app designed to help students improve academic performance by engaging in peer-to-peer learning, question sharing, and interactive problem solving."
                     />
                 </div>
 

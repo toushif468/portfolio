@@ -28,7 +28,7 @@ export default function HeroSection() {
                         className="rounded-full object-cover" fill />
 
                 </div>
-                <h1 data-aos="fade-up" data-aos-delay="200" className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl my-6 font-bold tracking-wide text-transparent bg-clip-text bg-linear-to-r from-indigo-500 to-gray-300" >Hi, I&apos;m a Web Developer</h1>
+                <h1 data-aos="fade-up" data-aos-delay="200" className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl my-6 font-bold tracking-wide text-transparent bg-clip-text bg-linear-to-r from-indigo-500 to-gray-300" >Hi, I&apos;m Toushif Hasan</h1>
                 <AnimatedIntro />
                 <LinkButton
                     href="#projects"
