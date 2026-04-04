@@ -47,7 +47,7 @@ export default function SkillSection() {
 
             <Header title="My Skills" />
 
-            <div className="w-[90%] md:w-[70%] grid md:grid-rows-3 gap-10 px-4 mx-auto">
+            <div className="w-[90%] md:w-[70%] grid md:grid-rows-3 gap-10 mx-auto">
 
                 {
                     (Object.entries(skills) as [keyof SkillData, SkillItem[]][]).map(([category, skillList]) => (

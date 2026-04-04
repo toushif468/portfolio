@@ -1,8 +1,8 @@
+import Particles from "./Particles";
 import Image from "next/image";
 import AnimatedIntro from "./AnimatedIntro";
 import { LuArrowRight } from "react-icons/lu";
 import LinkButton from "@/components/general/LinkButton";
-import Particles from "./Particles";
 export default function HeroSection() {
     return (
         <section id='home' className="h-screen relative flex justify-center items-center overflow-hidden flex-col">

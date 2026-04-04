@@ -1,14 +1,17 @@
 import Link from 'next/link'
-import React from 'react'
-import { LuCodeXml } from 'react-icons/lu'
-
+// import React from 'react'
+// import { LuCodeXml } from 'react-icons/lu'
+// import Image from 'next/image'
+import NextImage from 'next/image'
 const Logo = () => {
     return (
-        <Link href="/" className='flex items-center space-x-2'>
-            <div className='w-10 h-10 bg-gray-200 rounded-full grid place-items-center'>
-                <LuCodeXml />
-            </div>
-            <p className="text-gray-200 font-bold md:text-2xl hidden sm:block">Toushif</p>
+        <Link href="/" className='flex items-center justify-center'>
+            <NextImage
+                src="/Image/LogoImg.svg"
+                alt='logo'
+                width={40}
+                height={40}
+            />
         </Link>
     )
 }
