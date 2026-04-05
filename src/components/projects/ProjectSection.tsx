@@ -1,23 +1,49 @@
+"use client";
+import { allProjects, categories } from "@/constants/project";
 import Header from "../general/Header";
 import ProjectCard from "./ProjectCard";
+import { useState } from "react";
+
 
 export default function ProjectSection() {
+    const [cat, setCat] = useState("ALL")
+    const filteredProjects = allProjects.filter((project) =>
+        cat === "ALL" ? true : project.category.includes(cat)
+    )
     return (
         <section id="projects" className="py-20">
             <Header title="Recent Projects" />
 
+            <div className=" flex gap-6 items-center justify-center flex-wrap mb-12">
+                {
 
-            <div className="w-[90%] md:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+                    categories.map((categories) => (
+                        <button onClick={() => setCat(categories)} key={categories} className={`px-4 py-2 rounded-full text-sm font-medium ${categories === cat ? 'bg-indigo-600 text-white font-semibold' : 'bg-slate-800 text-gray-300'}  transition-all`}>
+                            {categories}
+                        </button>
+                    ))
+                }
+            </div>
+            <div className="w-[90%] md:w-[70%] mx-auto grid md:grid-cols-2 gap-10">
 
-                <div data-aos="fade-right">
-                    <ProjectCard
-                        title="Fashion E-commerce"
-                        image="/Image/fashionEcomerce.png"
-                        description="A responsive admin dashboard with data visualization charts, user management, and real-time analytics. Built with React, Tailwind CSS and Recharts."
-                    />
-                </div>
+                {/* <div data-aos="fade-right"> */}
+                {
+                    filteredProjects.map((project) => (
+                        <ProjectCard
+                            title={project.title}
+                            image={project.image}
+                            description={project.description}
+                            tools={project.tools}
+                            category={project.category}
+                            gitURL={project.gitURL}
+                            demoLink={project.demoLink}
+                        />
+                    ))
+                }
 
-                <div className="fade-left">
+                {/* </div> */}
+
+                {/* <div className="fade-left">
                     <ProjectCard
                         title="SymToDoc"
                         image="/Image/SymToDoc.png"
@@ -38,7 +64,7 @@ export default function ProjectSection() {
                         image="/Image/UIU_PSP.png"
                         description="UIU_PSP is a collaborative educational web app designed to help students improve academic performance by engaging in peer-to-peer learning, question sharing, and interactive problem solving."
                     />
-                </div>
+                </div> */}
 
             </div>
         </section>

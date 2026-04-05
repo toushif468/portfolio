@@ -1,15 +1,25 @@
 import Image from "next/image"
+import { FaGithub } from "react-icons/fa"
+import { FiExternalLink } from "react-icons/fi"
 
 interface ProjectCardProps {
     image: string
     title: string
     description: string
+    tools: string[]
+    category: string[]
+    gitURL: string
+    demoLink?: string
 }
 
 export default function ProjectCard({
     image,
     title,
     description,
+    tools,
+    category,
+    gitURL,
+    demoLink
 }: ProjectCardProps) {
     return (
 
@@ -39,10 +49,25 @@ export default function ProjectCard({
                 <p className="mt-4 mb-2 text-xl font-bold text-gray-300 group-hover:text-white transition-colors">
                     {title}
                 </p>
-                <p className="text-sm sm:text-base font-medium text-gray-500 group-hover:text-gray-300 transition-colors leading-relaxed line-clamp-2">
+                <p className="text-sm sm:text-base font-medium text-gray-500 group-hover:text-gray-300 transition-colors leading-relaxed line-clamp-2 mb-5">
                     {description}
                 </p>
+                <div className="flex flex-wrap gap-2 mb-6 ">
+                    <span className="px-2 py-1 bg-slate-950/50 text-indigo-300  border border-indigo-300/20 hover:border-indigo-300/40 text-sm rounded">React</span>
+                    <span className="px-2 py-1 bg-slate-950/50 text-indigo-300  border border-indigo-300/20 hover:border-indigo-300/40 text-sm rounded">Tailwind CSS</span>
+                    <span className="px-2 py-1 bg-slate-950/50 text-indigo-300  border border-indigo-300/20 hover:border-indigo-300/40 text-sm rounded">Next.js</span>
+
+                </div>
+                <div className="flex gap-5">
+                    <a href="#" className="text-sm font-medium text-indigo-500 hover:text-indigo-400 transition-colors">
+                        <FaGithub className="text-xl" />
+                    </a>
+                    <a href="#" className="text-sm font-medium text-indigo-500 hover:text-indigo-400 transition-colors">
+                        <FiExternalLink className="text-xl" />
+                    </a>
+                </div>
             </div>
+
         </div>
     )
 }
