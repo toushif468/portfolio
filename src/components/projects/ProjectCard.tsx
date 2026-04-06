@@ -26,14 +26,14 @@ export default function ProjectCard({
         <div className="group cursor-pointer mx-auto">
 
 
-            <div className="relative p-[2px] overflow-hidden rounded-xl bg-slate-900 transition-all duration-500 group-hover:shadow-[0_0_30px_rgba(79,70,229,0.4)] group-hover:scale-[1.02]">
+            <div className="relative p-[2px] overflow-hidden rounded-xl bg-blue-950/20 transition-all duration-500 group-hover:shadow-[0_0_30px_rgba(79,70,229,0.4)] group-hover:scale-[1.02]">
 
 
                 <div
                     className="absolute inset-[-1000%] animate-border-spin group-hover:animate-border-spin-fast bg-[conic-gradient(from_90deg_at_50%_50%,#818cf8_0%,#4338ca_50%,#818cf8_100%)]"
                 />
 
-                <div className="relative z-10 rounded-[10px] overflow-hidden bg-slate-950 aspect-video">
+                <div className="relative z-10 rounded-[10px] overflow-hidden bg-blue-950/20 aspect-video">
                     <Image
                         src={image}
                         alt={title}

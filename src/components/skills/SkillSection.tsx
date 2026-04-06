@@ -1,8 +1,8 @@
-import { DiJavascript, DiReact, DiNodejs, DiPython, DiJava } from "react-icons/di";
-import { SiTypescript, SiNextdotjs, SiTailwindcss, SiCplusplus, SiExpress, SiMongodb, SiPhp } from "react-icons/si";
+
 import Header from "../general/Header";
 import SkillCard from "./SkillCard";
 import { SkillData, SkillItem, skills } from "@/constants/skills";
+import { categories } from "@/constants/project";
 // const skills = [
 //     { name: "Javascript", icon: <DiJavascript />, skillLevel: 85 },
 //     { name: "React Js", icon: <DiReact />, skillLevel: 90 },
@@ -79,7 +79,6 @@ export default function SkillSection() {
                         </div>
                     ))
                 }
-
 
 
 
