@@ -1,23 +1,33 @@
 export interface AwardItem {
     id: number;
+    image: string;
     title: string;
     description:string;
     date: string;
-    icon: string;
+    
 }
 
 export const allAwards: AwardItem[] = [
     {
         id:1,
-        title: "Best Developer Award",
-        description: "Awarded for outstanding performance and contributions to the development team.",
-        date: "2023-12-15",
-        icon: "🏆"
+        image: "/Image/fydp.jpeg",
+        title: "Award giving of Achievement for becoming 1st Runner Up in FYDP-I Category",
+        description: "CSE Porject Show.",
+        date: "2024-12-15"
+       
     }, {
         id:2,
-        title: "Innovation Excellence",
+        image: "/Image/SmartParkManagementSystem.jpg",
+        title: "Smart Park Management System",
         description: "Recognized for innovative solutions and creative problem-solving in projects.",
-        date: "2022-11-10",
-        icon: "💡"
+        date: "2023-21-12"
+       
+    }, {
+        id:3,
+        image: "/Image/SmartAutomatedExamHall.jpg",
+        title: "Smart Automated Exam Hall",
+        description: "Recognized for innovative solutions and creative problem-solving in projects.",
+        date: "2022-11-9"
+       
     }
 ]

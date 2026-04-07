@@ -1,5 +1,6 @@
 import AwardCard from './AwardCard'
 import Header from '../general/Header'
+import { allAwards } from '@/constants/awards'
 
 const AwardSection = () => {
     return (
@@ -10,7 +11,17 @@ const AwardSection = () => {
 
             </div>
             <div className=' w-[90%] md:w-[70%] grid md:grid-cols-2 gap-8 mx-auto '>
-                <AwardCard />
+                {
+                    allAwards.map((award) => (
+                        <AwardCard
+                            key={award.id}
+                            image={award.image}
+                            title={award.title}
+                            description={award.description}
+                            date={award.date}
+                        />
+                    ))
+                }
 
             </div>
         </section>
