@@ -11,8 +11,6 @@ const AwardSection = () => {
             </div>
             <div className=' w-[90%] md:w-[70%] grid md:grid-cols-2 gap-8 mx-auto '>
                 <AwardCard />
-                <AwardCard />
-                <AwardCard />
 
             </div>
         </section>
