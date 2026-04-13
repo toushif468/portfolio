@@ -38,7 +38,7 @@ export default function MobileNav({ navOpen, setNavOpen }: MobileNavProps) {
                 }
                 <div className='my-4'>
                     <LinkButton
-                        href='/documents/My CV.pdf'
+                        href='/documents/toushif Muktashid Hasan resume.pdf'
                         text='Download CV'
                         download
                         icon={LuDownload}
