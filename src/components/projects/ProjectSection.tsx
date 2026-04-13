@@ -30,6 +30,7 @@ export default function ProjectSection() {
                 {
                     filteredProjects.map((project) => (
                         <ProjectCard
+                            key={project.id}
                             title={project.title}
                             image={project.image}
                             description={project.description}

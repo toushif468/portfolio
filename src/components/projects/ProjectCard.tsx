@@ -53,9 +53,11 @@ export default function ProjectCard({
                     {description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6 ">
-                    <span className="px-2 py-1 bg-slate-950/50 text-indigo-300  border border-indigo-300/20 hover:border-indigo-300/40 text-sm rounded">React</span>
-                    <span className="px-2 py-1 bg-slate-950/50 text-indigo-300  border border-indigo-300/20 hover:border-indigo-300/40 text-sm rounded">Tailwind CSS</span>
-                    <span className="px-2 py-1 bg-slate-950/50 text-indigo-300  border border-indigo-300/20 hover:border-indigo-300/40 text-sm rounded">Next.js</span>
+                    {tools.map((tool, index) => (
+                        < span key={index} className="px-2 py-1 bg-slate-950/50 text-indigo-300  border border-indigo-300/20 hover:border-indigo-300/40 text-sm rounded">{tool}</span>
+                    ))}
+
+
 
                 </div>
                 <div className="flex gap-5">
@@ -68,6 +70,6 @@ export default function ProjectCard({
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
