@@ -19,17 +19,8 @@ export const allProjects: Project[] = [
         category: ["Typescript", "React"],
         gitURL: "https://github.com/toushif468/FashionEcommerce",
         demoLink: "https://fashion-ecommerce-frontend-t5zl.onrender.com/",
-    }, {
+    },  {
         id: 2,
-        title: "SymToDoc",
-        image: "/Image/SymToDoc.png",
-        description: "A React Native mobile application designed to empower users with fast, accessible, and intelligent health insights.",
-        tools: ["React Native","Flask", "scikit-learn", "Node.js", "Express.js", "MongoDB", "Tailwind CSS","TypeScript", "Python"],
-        category: ["React Native", "Machine Learning"],
-        gitURL: "https://github.com/toushif468/SymToDoc",
-        demoLink: "https://expo.dev/accounts/srniloy/projects/sym-to-doc/builds/82c0d854-03f3-4ce2-8252-d22f6a0283d8",
-    } , {
-        id: 3,
         title: "Roots2Goods",
         image: "/Image/Roots2Goods.png",
         description: "A React Native mobile application designed to empower users with fast, accessible, and intelligent health insights.",
@@ -38,13 +29,22 @@ export const allProjects: Project[] = [
         gitURL: "https://github.com/toushif468/Root2Goods",
         demoLink: "https://roots2goods.vercel.app/",
     } ,{
+        id: 3,
+        title: "SymToDoc",
+        image: "/Image/SymToDoc.png",
+        description: "A React Native mobile application designed to empower users with fast, accessible, and intelligent health insights.",
+        tools: ["React Native","Flask", "scikit-learn", "Node.js", "Express.js", "MongoDB", "Tailwind CSS","TypeScript", "Python"],
+        category: ["React Native", "Machine Learning"],
+        gitURL: "https://github.com/toushif468/SymToDoc",
+        demoLink: "https://expo.dev/accounts/srniloy/projects/sym-to-doc/builds/82c0d854-03f3-4ce2-8252-d22f6a0283d8",
+    } ,{
         id: 4,
         title: "UIU_PSP",
         image: "/Image/UIU_PSP.png",
         description: "UIU_PSP is a collaborative educational web app designed to help students improve academic performance by engaging in peer-to-peer learning, question sharing, and interactive problem solving.",
         tools: ["PHP ", "HTML", "CSS", "MySQL", "Bootstrap", "InfinityFree", "JS"],
         category: ["PHP ", "mysql"],
-        gitURL: "https://github.com/yourusername/root2good",
+        gitURL: "https://github.com/toushif468/UIU_PSP-2.0",
         demoLink: "https://uiu-psp.vercel.app/",
     }, {
         id: 5,

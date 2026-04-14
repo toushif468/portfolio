@@ -32,3 +32,14 @@
   /* The Glow Animation */
   --animate-glow: pulse-glow 1.5s ease-in-out infinite;
 }
+
+@keyframes infinite-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); } 
+}
+
+.animate-infinite-scroll {
+  display: flex;
+  width: max-content;
+  animation: infinite-scroll 25s linear infinite;
+}

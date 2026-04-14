@@ -8,6 +8,10 @@ import { Toaster } from "react-hot-toast";
 import ProjectSection from "@/components/projects/ProjectSection";
 import AwardSection from "@/components/awards/AwardSection";
 import PublicationSection from "@/components/publication/PublicationSection";
+import TechnologySection from "@/components/technologies/TechnologySection";
+
+
+
 // import TestimonialSection from "@/components/testimonials/TestimonialSection";
 
 
@@ -22,6 +26,7 @@ export default function Home() {
       <ProjectSection />
       <SkillSection />
       {/* <TestimonialSection /> */}
+      <TechnologySection />
       <AwardSection />
       <PublicationSection />
       <ContactSection />
