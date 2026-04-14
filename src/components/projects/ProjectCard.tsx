@@ -61,10 +61,11 @@ export default function ProjectCard({
 
                 </div>
                 <div className="flex gap-5">
-                    <a href="#" className="text-sm font-medium text-indigo-500 hover:text-indigo-400 transition-colors">
+
+                    <a href={gitURL} className="text-sm font-medium text-indigo-500 hover:text-indigo-400 transition-colors">
                         <FaGithub className="text-xl" />
                     </a>
-                    <a href="#" className="text-sm font-medium text-indigo-500 hover:text-indigo-400 transition-colors">
+                    <a href={demoLink} className="text-sm font-medium text-indigo-500 hover:text-indigo-400 transition-colors">
                         <FiExternalLink className="text-xl" />
                     </a>
                 </div>

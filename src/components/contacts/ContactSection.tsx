@@ -2,16 +2,17 @@
 
 import { useState } from 'react';
 import toast from 'react-hot-toast';
-import { 
-    FaGithub, 
-    FaLinkedin, 
-    FaEnvelope, 
-    FaMapMarkerAlt, 
-    FaPhoneAlt, 
-    FaPaperPlane, 
-    FaCheckCircle, 
-    FaSpinner 
+import {
+    FaGithub,
+    FaLinkedin,
+    FaEnvelope,
+    FaMapMarkerAlt,
+    FaPhoneAlt,
+    FaPaperPlane,
+    FaCheckCircle,
+    FaSpinner
 } from "react-icons/fa";
+import { SiCodeforces, SiLeetcode } from 'react-icons/si';
 
 export default function ContactSection() {
     const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
@@ -20,10 +21,10 @@ export default function ContactSection() {
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         setStatus("sending");
-        
+
         const toastId = toast.loading('Sending your message...');
         const formData = new FormData(event.currentTarget);
-        
+
         // Add the timestamp for your 'submittedAt' column
         // formData.append("submittedAt", new Date().toLocaleString());
         formData.append("access_key", "47be8946-62af-46aa-a3bb-2e00ec70a99f");
@@ -39,7 +40,7 @@ export default function ContactSection() {
             if (data.success) {
                 setStatus("success");
                 toast.success('Form submitted successfully!', { id: toastId });
-                (event.target as HTMLFormElement).reset(); 
+                (event.target as HTMLFormElement).reset();
                 setMessage("");
                 setTimeout(() => setStatus("idle"), 4000);
             } else {
@@ -112,6 +113,15 @@ export default function ContactSection() {
                         <a href="https://www.linkedin.com/in/toushif-muktashid-hasan-1891b720a/" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-900 rounded-xl text-gray-400 hover:text-white hover:bg-indigo-600 transition-all shadow-lg">
                             <FaLinkedin size={24} />
                         </a>
+                        {/* New LeetCode Link */}
+                        <a href="https://leetcode.com/u/Hi_Bro/" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-900 rounded-xl text-gray-400 hover:text-[#FFA116] hover:bg-slate-800 transition-all shadow-lg" title="LeetCode">
+                            <SiLeetcode size={24} />
+                        </a>
+
+                        {/* New Codeforces Link */}
+                        <a href="https://codeforces.com/profile/HI_BRO" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-900 rounded-xl text-gray-400 hover:text-[#1F8ACB] hover:bg-slate-800 transition-all shadow-lg" title="Codeforces">
+                            <SiCodeforces size={24} />
+                        </a>
                     </div>
                 </div>
 
@@ -147,20 +157,20 @@ export default function ContactSection() {
                                     {message.length} / 1500 chars (approx 250 words)
                                 </span>
                             </div>
-                            <textarea 
-                                name="Message" 
-                                required 
-                                rows={7} 
+                            <textarea
+                                name="Message"
+                                required
+                                rows={7}
                                 maxLength={1500}
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
-                                placeholder="How can I help you?" 
+                                placeholder="How can I help you?"
                                 className="w-full bg-slate-800/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition-colors resize-none"
                             ></textarea>
                         </div>
 
-                        <button 
-                            type="submit" 
+                        <button
+                            type="submit"
                             disabled={status === "sending" || status === "success"}
                             className={`w-full font-bold py-4 rounded-xl shadow-lg transition-all flex items-center justify-center gap-3 cursor-pointer
                                 ${status === "success" ? "bg-green-600 shadow-green-500/20" : "bg-indigo-600 hover:bg-indigo-500 shadow-indigo-500/20"}
